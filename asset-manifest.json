@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MMStal/static/css/main.1336e4f7.chunk.css",
+    "main.css": "/MMStal/static/css/main.5a8ba4dc.chunk.css",
     "main.js": "/MMStal/static/js/main.66e5e492.chunk.js",
     "main.js.map": "/MMStal/static/js/main.66e5e492.chunk.js.map",
     "runtime-main.js": "/MMStal/static/js/runtime-main.5713dfe8.js",
@@ -10,7 +10,7 @@
     "static/js/2.ee70317d.chunk.js.map": "/MMStal/static/js/2.ee70317d.chunk.js.map",
     "index.html": "/MMStal/index.html",
     "static/css/2.598ce81e.chunk.css.map": "/MMStal/static/css/2.598ce81e.chunk.css.map",
-    "static/css/main.1336e4f7.chunk.css.map": "/MMStal/static/css/main.1336e4f7.chunk.css.map",
+    "static/css/main.5a8ba4dc.chunk.css.map": "/MMStal/static/css/main.5a8ba4dc.chunk.css.map",
     "static/js/2.ee70317d.chunk.js.LICENSE.txt": "/MMStal/static/js/2.ee70317d.chunk.js.LICENSE.txt",
     "static/media/Adam_1280w.43d449b3.jpg": "/MMStal/static/media/Adam_1280w.43d449b3.jpg",
     "static/media/Adam_1920w.7bb46e02.jpg": "/MMStal/static/media/Adam_1920w.7bb46e02.jpg",
@@ -55,7 +55,7 @@
     "static/js/runtime-main.5713dfe8.js",
     "static/css/2.598ce81e.chunk.css",
     "static/js/2.ee70317d.chunk.js",
-    "static/css/main.1336e4f7.chunk.css",
+    "static/css/main.5a8ba4dc.chunk.css",
     "static/js/main.66e5e492.chunk.js"
   ]
 }
