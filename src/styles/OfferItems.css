@@ -1,9 +1,9 @@
 .offer {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   flex-wrap: wrap;
   max-width: 1366px;
-  margin: 20px auto;
+  margin: 18px auto;
 }
 
 .offer__title {
@@ -11,7 +11,7 @@
   font-size: 40px;
   text-transform: uppercase;
   font-family: "Anton", sans-serif;
-  margin: 20px;
+  margin: 18px;
 }
 
 .offer__item {
@@ -19,20 +19,20 @@
   flex-direction: column;
   width: 300px;
   height: 300px;
-  box-shadow: 0 0 4px #ccc;
-  margin: 10px auto;
+  box-shadow: 0 0 8px #ccc;
+  margin: 8px auto;
 }
 
 .offer__img {
   width: 150px;
-  margin: 10px auto;
+  margin: 8px auto;
 }
 
 .offer__border {
   background-color: #e67918;
   width: 90%;
   height: 2px;
-  margin: 5px auto;
+  margin: 4px auto;
 }
 
 .offer__desc {
@@ -58,6 +58,6 @@
   }
   .offer__border {
     height: 3px;
-    margin: 15px auto;
+    margin: 16px auto;
   }
 }

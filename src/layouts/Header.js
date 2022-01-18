@@ -30,15 +30,15 @@ class Header extends React.Component {
       <>
         <div className="header__menu--container">
           <img src={logo} alt="logo MMstal" className="header__logo" />
-          <div className="menu-btn" onClick={this.handlerMenu}>
-            <div className="menu-btn__burger"></div>
-          </div>
           <nav className="header__menu">
             {<Navigation open={this.handlerMenu} />}
           </nav>
           <div className="header__medias">
             <span className="fa fa-facebook-square" aria-hidden="true"></span>
             <span className="fa fa-instagram" aria-hidden="true"></span>
+          </div>
+          <div className="menu-btn" onClick={this.handlerMenu}>
+            <div className="menu-btn__burger"></div>
           </div>
         </div>
         <div className="header__desc--container" data-aos={"fade-up"}>
