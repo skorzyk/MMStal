@@ -1,6 +1,5 @@
 .history {
   width: 100%;
-  max-height: 100vh;
 }
 
 .about__company {
@@ -8,7 +7,7 @@
   font-weight: 500;
   text-transform: uppercase;
   font-size: 30px;
-  padding: 40px 40px 20px 40px;
+  padding: 40px 20px 20px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -18,27 +17,27 @@
   margin: 0 auto;
   background-image: url("../images/Vector.png");
   background-size: contain;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .history__title {
   font-family: "Anton", sans-serif;
   font-weight: 500;
   font-size: 24px;
-  padding: 5px 20px 20px 40px;
+  padding: 4px 20px 16px;
 }
 
 .history__desc--main {
   width: 100%;
   height: 100%;
   font-family: "Anton", sans-serif;
-  padding: 10px 20px;
+  padding: 12px 20px;
 }
 
 .history__date {
   font-family: "Anton", sans-serif;
   font-size: 20px;
-  padding: 10px 20px;
+  padding: 12px 20px;
 }
 
 .year {
@@ -47,12 +46,11 @@
 }
 
 .history__desc--other {
-  display: block;
   width: 100%;
   height: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  padding: 10px 20px 50px 20px;
+  padding: 12px 20px 12px;
 }
 
 @media (min-width: 992px) {
@@ -71,13 +69,13 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding-left: 50px;
+    /* padding-left: 50px; */
   }
   .history__desc--main {
     font-size: 18px;
   }
   .history__date {
-    padding-top: 30px;
+    padding-top: 16px;
     font-size: 24px;
   }
   .year {
@@ -95,16 +93,16 @@
 
   .history__title {
     font-size: 36px;
-    padding-top: 40px;
+    padding-top: 16px;
   }
   .history__column--container {
-    padding-top: 20px;
+    padding-top: 8px;
   }
   .history__desc--main {
     font-size: 20px;
   }
   .history__date {
-    padding-top: 50px;
+    padding-top: 16px;
     font-size: 26px;
   }
   .year {

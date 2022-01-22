@@ -24,6 +24,7 @@ class Header extends React.Component {
     this.setState({
       menuOpen: !this.state.menuOpen,
     });
+    console.log(this.state);
   };
   render() {
     return (

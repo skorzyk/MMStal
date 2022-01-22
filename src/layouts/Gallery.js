@@ -66,94 +66,62 @@ const Gallery = () => {
         >
           <SwiperSlide>
             <div className="slide-wrapper">
-              <img
-                src={balustrady1}
-                alt="zdjecie balustrady 1"
-                className="slide__img"
-              />
+              <img src={balustrady1} alt="" className="slide__img" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="slide-wrapper">
-              <img
-                src={barierka}
-                alt="zdjecie barierki"
-                className="slide__img"
-              />
+              <img src={barierka} alt="" className="slide__img" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="slide-wrapper">
-              <img src={brama2} alt="zdjecie brama 1" className="slide__img" />
+              <img src={brama2} alt="" className="slide__img" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="slide-wrapper">
-              <img
-                src={ogrodzenia2}
-                alt="zdjecie ogrodzenia"
-                className="slide__img"
-              />
+              <img src={ogrodzenia2} alt="" className="slide__img" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="slide-wrapper">
-              <img
-                src={balustrady2}
-                alt="zdjecie balustrady"
-                className="slide__img"
-              />
+              <img src={balustrady2} alt="" className="slide__img" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="slide-wrapper">
-              <img src={brama} alt="zdjecie brama" className="slide__img" />
+              <img src={brama} alt="" className="slide__img" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="slide-wrapper">
-              <img
-                src={ogrodzenia}
-                alt="zdjecie ogrodzenia"
-                className="slide__img"
-              />
+              <img src={ogrodzenia} alt="" className="slide__img" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="slide-wrapper">
-              <img src={brama3} alt="zdjecie brama" className="slide__img" />
+              <img src={brama3} alt="" className="slide__img" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="slide-wrapper">
-              <img
-                src={balustrady3}
-                alt="zdjecie balustrada"
-                className="slide__img"
-              />
+              <img src={balustrady3} alt="" className="slide__img" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="slide-wrapper">
-              <img src={brama4} alt="zdjecie brama" className="slide__img" />
+              <img src={brama4} alt="" className="slide__img" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="slide-wrapper">
-              <img
-                src={balustrady4}
-                alt="zdjecie balustrada"
-                className="slide__img"
-              />
+              <img src={balustrady4} alt="" className="slide__img" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="slide-wrapper">
-              <img
-                src={balustrady5}
-                alt="zdjecie balustrada"
-                className="slide__img"
-              />
+              <img src={balustrady5} alt="" className="slide__img" />
             </div>
           </SwiperSlide>
         </Swiper>
