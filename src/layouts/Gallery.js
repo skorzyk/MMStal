@@ -26,6 +26,7 @@ import brama3 from "../images/wlasne/brama_wlasne.jpg";
 import brama4 from "../images/wlasne/bramy_przesuwne_wlasne.jpg";
 import ogrodzenia from "../images/wlasne/ogrodzenia2_wlasne.jpg";
 import ogrodzenia2 from "../images/wlasne/ogrodzenia_wlasne-crop.jpg";
+import Aos from "aos";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
@@ -33,6 +34,7 @@ const Gallery = () => {
   const options = {
     buttons: { backgroundColor: "#e67918" },
   };
+  window.addEventListener("load", Aos.refresh);
   return (
     <>
       <SRLWrapper options={options}>

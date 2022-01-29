@@ -8,16 +8,14 @@ function Contact() {
   if (state.succeeded) {
     return (
       <>
-        <h2 className="contact__title" data-aos={"fade-up"}>
-          Kontakt
-        </h2>
-        <div className="form--container" data-aos={"fade-up"}>
+        <h2 className="contact__title">Kontakt</h2>
+        <div className="form--container">
           <p className="form__desc">
             Dziękujemy za wysłanie formularza. Skontaktujemy się z Tobą jak
             najszybciej!
           </p>
         </div>
-        <div className="contact--container" data-aos={"fade-up"}>
+        <div className="contact--container">
           <div className="contact__single">
             <h4 className="contact__name">
               Marcin <span className="contact__surname">Piszczek</span>
@@ -48,9 +46,7 @@ function Contact() {
   }
   return (
     <>
-      <h2 className="contact__title" data-aos={"fade-up"}>
-        Kontakt
-      </h2>
+      <h2 className="contact__title">Kontakt</h2>
       <div className="form--container" data-aos={"fade-up"}>
         <p className="form__desc">
           Zachęcamy do kontaktu, telefonicznie lub poprzez formularz dostępny
