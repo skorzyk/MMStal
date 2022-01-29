@@ -4,9 +4,9 @@ import "../styles/Contact.css";
 
 class Contact extends React.Component {
   state = {
+    textAreaValue: "",
     emailValue: "",
     topicValue: "",
-    textAreaValue: "",
   };
 
   handleChangeEmail = (e) => {
@@ -27,10 +27,6 @@ class Contact extends React.Component {
     });
   };
 
-  handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
   render() {
     const { emailValue, topicValue, textAreaValue } = this.state;
     return (
@@ -43,7 +39,7 @@ class Contact extends React.Component {
             Zachęcamy do kontaktu, telefonicznie lub poprzez formularz dostępny
             poniżej. Odpowiemy na Wasze pytania.
           </p>
-          <form>
+          <form action="https://formspree.io/f/xzboezkz" method="POST">
             <div className="input__wrapper">
               <input
                 type="email"
@@ -53,6 +49,7 @@ class Contact extends React.Component {
                 placeholder="Twój adres e-mail"
                 value={emailValue}
                 onChange={this.handleChangeEmail}
+                required
               />
               <label htmlFor="email" className="input__label">
                 Twój adres e-mail
@@ -67,6 +64,7 @@ class Contact extends React.Component {
                 placeholder="Temat wiadomości"
                 value={topicValue}
                 onChange={this.handleChangeTopic}
+                required
               />
               <label htmlFor="email" className="input__label">
                 Temat wiadomości
@@ -78,11 +76,14 @@ class Contact extends React.Component {
               className="textarea__contact"
               value={textAreaValue}
               onChange={this.handleChangeTextarea}
+              required
             ></textarea>
             <button
+              disabled={
+                emailValue && topicValue && textAreaValue ? false : true
+              }
               type="submit"
               className="button__contact"
-              onSubmit={this.handleSubmit}
             >
               Wyślij wiadomość
             </button>
@@ -96,7 +97,6 @@ class Contact extends React.Component {
             <a href="tel:667-045-533" className="contact__number">
               667-045-533
             </a>
-            <p className="contact__email">marcin.piszczek@przyklad.pl</p>
           </div>
           <div className="contact__single">
             <h4 className="contact__name">
@@ -105,10 +105,12 @@ class Contact extends React.Component {
             <a href="tel:575-255-700" className="contact__number">
               575-255-700
             </a>
-            <p className="contact__email">adam.boruta@przyklad.pl</p>
           </div>
           <div className="contact__adres">
             <p className="contact__name-company">MMSTAL</p>
+            <a href="mailto:biuro@mmstal.pl" className="contact__mail">
+              biuro@mmstal.pl
+            </a>
             <p className="contact__street">ul. Jagodowa 11</p>
             <p className="contact__code">32-052 Radziszów</p>
           </div>

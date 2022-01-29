@@ -14,17 +14,19 @@ class Header extends React.Component {
     const menuBtn = document.querySelector(".menu-btn");
     const menuList = document.querySelector(".menu__list");
 
-    if (!this.state.menuOpen) {
+    if (!this.state.menuOpen || !menuBtn.classList.contains("open")) {
       menuBtn.classList.add("open");
       menuList.classList.add("show");
+      this.setState({
+        menuOpen: true,
+      });
     } else {
       menuBtn.classList.remove("open");
       menuList.classList.remove("show");
+      this.setState({
+        menuOpen: false,
+      });
     }
-    this.setState({
-      menuOpen: !this.state.menuOpen,
-    });
-    console.log(this.state);
   };
   render() {
     return (

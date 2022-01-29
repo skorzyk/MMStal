@@ -3,24 +3,16 @@ import React from "react";
 import "../styles/Navigation.css";
 
 class Navigation extends React.Component {
-  state = { menuOpen: true };
   handlerMenu = () => {
-    // const menuBtn = document.querySelector(".menu-btn");
-    // const menuList = document.querySelector(".menu__list");
-    // if (
-    //   menuBtn.classList.contains("open") &&
-    //   menuList.classList.contains("show")
-    // ) {
-    //   menuBtn.classList.remove("open");
-    //   menuList.classList.remove("show");
-    //   // this.setState({
-    //   //   menuOpen: false,
-    //   // });
-    // }
-    // this.setState({
-    //   menuOpen: !this.state.menuOpen,
-    // });
-    // console.log(this.state);
+    const menuBtn = document.querySelector(".menu-btn");
+    const menuList = document.querySelector(".menu__list");
+    if (
+      menuBtn.classList.contains("open") &&
+      menuList.classList.contains("show")
+    ) {
+      menuBtn.classList.remove("open");
+      menuList.classList.remove("show");
+    }
   };
   render() {
     return (
