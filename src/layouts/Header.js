@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 
 import "../styles/Header.css";
 
-import scrollBtn from "../images/scroll 1.png";
+import scrollBtn from "../images/svg/scroll 1.svg";
 import logo from "../images/Mask Group.png";
 
 class Header extends React.Component {

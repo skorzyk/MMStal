@@ -1,9 +1,9 @@
 import "../styles/OwnOffer.css";
 
-import dollarImg from "../images/dolar 1.png";
-import miarkaImg from "../images/miarka 1.png";
-import hamerImg from "../images/hamer 1.png";
-import carImg from "../images/car 1.png";
+import dollarImg from "../images/svg/dolar 1.svg";
+import miarkaImg from "../images/svg/miarka 1.svg";
+import hamerImg from "../images/svg/hamer 1.svg";
+import carImg from "../images/svg/car 1.svg";
 
 const OwnOffer = () => {
   return (
