@@ -58,7 +58,7 @@ const Employers = () => {
         />
         <div className="employee__desc--container">
           <h4 className="employee__name">
-            Marek <span className="employee__surname">Nazwisko</span>
+            Marek <span className="employee__surname">Piszczek</span>
           </h4>
           <p className="employee__exp">40 lat doświadczenia</p>
           <p className="employee__permission">
@@ -84,7 +84,7 @@ const Employers = () => {
         />
         <div className="employee__desc--container">
           <h4 className="employee__name">
-            Romek <span className="employee__surname">Nazwisko</span>
+            Romek <span className="employee__surname">Kozik</span>
           </h4>
           <p className="employee__exp">35 lat doświadczenia</p>
           <p className="employee__permission">
