@@ -71,7 +71,7 @@ const Employers = () => {
             poczynając od spawania, nadzór, aż po mistrza w budownictwie
             konstrukcji stalowych. Doświadczenie jakie posiada bezpośrednio
             przekłada się na jakość, jak i wytrzymałość konstrukcji jakie dla
-            państwa wykonujemy.
+            Państwa wykonujemy.
           </p>
         </div>
       </div>

@@ -64,7 +64,7 @@ class Header extends React.Component {
             Z pasji do <span className="stal"> stali</span>
           </h2>
           <p className="header__desc--text">
-            Specjalizujemy się w metaplastyce, a do swoich wyrobów używamy
+            Specjalizujemy się w metaloplastyce, a do swoich wyrobów używamy
             najwyższej jakości stali. W naszej ofercie znajdą państwo bramy,
             balustrady, ogrodzenia, a także meble do domu. Usługi montażowe
             naszych produktów wykonujemy z ostrożnością i dbałością.
