@@ -37,8 +37,22 @@ class Header extends React.Component {
             {<Navigation open={this.handlerMenu} />}
           </nav>
           <div className="header__medias">
-            <span className="fa fa-facebook-square" aria-hidden="true"></span>
-            <span className="fa fa-instagram" aria-hidden="true"></span>
+            <a
+              href="https://www.facebook.com/MMstalMarcinPiszczek"
+              target={"_blank"}
+              alt="MMstal facebook"
+              rel="noreferrer"
+            >
+              <span className="fa fa-facebook-square" aria-hidden="true"></span>
+            </a>
+            <a
+              href="https://www.instagram.com/mmstal.pl/"
+              target={"_blank"}
+              alt="MMstal instagram"
+              rel="noreferrer"
+            >
+              <span className="fa fa-instagram" aria-hidden="true"></span>
+            </a>
           </div>
           <div className="menu-btn" onClick={this.handlerMenu}>
             <div className="menu-btn__burger"></div>
