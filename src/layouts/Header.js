@@ -6,7 +6,7 @@ import Navigation from "./Navigation";
 import "../styles/Header.css";
 
 import scrollBtn from "../images/svg/scroll 1.svg";
-import logo from "../images/Mask Group.png";
+import logo from "../images/svg/MMstal-logo-SVG.svg";
 
 class Header extends React.Component {
   state = { menuOpen: false };

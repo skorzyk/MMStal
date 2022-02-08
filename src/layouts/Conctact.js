@@ -33,7 +33,7 @@ function Contact() {
             </a>
           </div>
           <div className="contact__adres">
-            <p className="contact__name-company">MMSTAL</p>
+            <h3 className="contact__name-company">MMSTAL</h3>
             <a href="mailto:biuro@mmstal.pl" className="contact__mail">
               biuro@mmstal.pl
             </a>
@@ -127,7 +127,7 @@ function Contact() {
           </a>
         </div>
         <div className="contact__adres">
-          <p className="contact__name-company">MMSTAL</p>
+          <h3 className="contact__name-company">MMSTAL</h3>
           <a href="mailto:biuro@mmstal.pl" className="contact__mail">
             biuro@mmstal.pl
           </a>

@@ -25,7 +25,7 @@ const Employers = () => {
         <img
           srcSet={`${Marcin4} 460w, ${Marcin3} 800w, ${Marcin2} 1280w, ${Marcin1} 1920w`}
           src={Marcin1}
-          alt="Marcin Piszczek"
+          alt="Marcin Piszczek MMstal"
           className="employee__img"
         />
         <div className="employee__desc--container">
@@ -53,7 +53,7 @@ const Employers = () => {
         <img
           srcSet={`${Marek4} 460w, ${Marek3} 800w, ${Marek2} 1280w, ${Marek1} 1920w`}
           src={Marek1}
-          alt="Marek"
+          alt="Marek Piszczek MMstal"
           className="employee__img employee__img--second"
         />
         <div className="employee__desc--container">
@@ -79,7 +79,7 @@ const Employers = () => {
         <img
           srcSet={`${Romek4} 460w, ${Romek3} 800w, ${Romek2} 1280w, ${Romek1} 1920w`}
           src={Romek1}
-          alt="Romek"
+          alt="Romek Kozik MMstal"
           className="employee__img"
         />
         <div className="employee__desc--container">
@@ -106,7 +106,7 @@ const Employers = () => {
         <img
           srcSet={`${Adam4} 460w, ${Adam3} 800w, ${Adam2} 1280w, ${Adam1} 1920w`}
           src={Adam1}
-          alt="Adam Boruta"
+          alt="Adam Boruta MMstal"
           className="employee__img employee__img--second"
         />
         <div className="employee__desc--container">

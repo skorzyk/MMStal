@@ -18,13 +18,13 @@ class Navigation extends React.Component {
     return (
       <ul className="menu__list">
         <li className="menu__item">
-          <a href="#offerID" className="menu__link" onClick={this.handlerMenu}>
+          <a href="#oferta" className="menu__link" onClick={this.handlerMenu}>
             Oferta
           </a>
         </li>
         <li className="menu__item">
           <a
-            href="#ownOfferID"
+            href="#wlasny-projekt"
             className="menu__link"
             onClick={this.handlerMenu}
           >
@@ -32,29 +32,17 @@ class Navigation extends React.Component {
           </a>
         </li>
         <li className="menu__item">
-          <a
-            href="#galleryID"
-            className="menu__link"
-            onClick={this.handlerMenu}
-          >
+          <a href="#galeria" className="menu__link" onClick={this.handlerMenu}>
             Nasze realizacje
           </a>
         </li>
         <li className="menu__item">
-          <a
-            href="#historyID"
-            className="menu__link"
-            onClick={this.handlerMenu}
-          >
+          <a href="#historia" className="menu__link" onClick={this.handlerMenu}>
             O nas
           </a>
         </li>
         <li className="menu__item">
-          <a
-            href="#contactID"
-            className="menu__link"
-            onClick={this.handlerMenu}
-          >
+          <a href="#kontakt" className="menu__link" onClick={this.handlerMenu}>
             Kontakt
           </a>
         </li>

@@ -14,50 +14,38 @@ const OfferItems = () => {
         Oferta
       </h3>
       <div className="offer__item" data-aos={"fade-up"}>
-        <img
-          src={przesuwneImg}
-          alt="Bramy przesuwne zdjęcie"
-          className="offer__img"
-        />
+        <img src={przesuwneImg} alt="Bramy przesuwne" className="offer__img" />
         <span className="offer__border"></span>
-        <p className="offer__desc">Bramy przesuwne</p>
+        <h4 className="offer__desc">Bramy przesuwne</h4>
       </div>
       <div className="offer__item" data-aos={"fade-up"}>
         <img
           src={dwuskrzydłoweImg}
-          alt="Bramy dwuskrzydłowe zdjęcie"
+          alt="Bramy dwuskrzydłowe"
           className="offer__img"
         />
         <span className="offer__border"></span>
-        <p className="offer__desc">Bramy dwuskrzydłowe</p>
+        <h4 className="offer__desc">Bramy dwuskrzydłowe</h4>
       </div>
       <div className="offer__item" data-aos={"fade-up"}>
-        <img src={furtkiImg} alt="Furtki zdjęcie" className="offer__img" />
+        <img src={furtkiImg} alt="Furtki" className="offer__img" />
         <span className="offer__border"></span>
-        <p className="offer__desc">Furtki</p>
+        <h4 className="offer__desc">Furtki</h4>
       </div>
       <div className="offer__item" data-aos={"fade-up"}>
-        <img src={przeslaImg} alt="Przęsła zdjęcie" className="offer__img" />
+        <img src={przeslaImg} alt="Przęsła" className="offer__img" />
         <span className="offer__border"></span>
-        <p className="offer__desc">Przęsła</p>
+        <h4 className="offer__desc">Przęsła</h4>
       </div>
       <div className="offer__item" data-aos={"fade-up"}>
-        <img
-          src={balustradyImg}
-          alt="Balustrady zdjęcie"
-          className="offer__img"
-        />
+        <img src={balustradyImg} alt="Balustrady" className="offer__img" />
         <span className="offer__border"></span>
-        <p className="offer__desc">Balustrady</p>
+        <h4 className="offer__desc">Balustrady</h4>
       </div>
       <div className="offer__item" data-aos={"fade-up"}>
-        <img
-          src={mebleImg}
-          alt="Meble do domu zdjęcie"
-          className="offer__img"
-        />
+        <img src={mebleImg} alt="Meble do domu" className="offer__img" />
         <span className="offer__border"></span>
-        <p className="offer__desc">Meble do domu</p>
+        <h4 className="offer__desc">Meble do domu</h4>
       </div>
     </>
   );

@@ -24,22 +24,22 @@ class App extends React.Component {
         <header className="header" id="headerID">
           {<Header />}
         </header>
-        <section className="offer" id="offerID">
+        <section className="offer" id="oferta">
           {<OfferItems />}
         </section>
-        <section className="ownOffer" id="ownOfferID">
+        <section className="ownOffer" id="wlasny-projekt">
           {<OwnOffer />}
         </section>
-        <section className="gallery" id="galleryID">
+        <section className="gallery" id="galeria">
           {<Gallery />}
         </section>
-        <section className="history" id="historyID">
+        <section className="history" id="historia">
           {<HistoryMMStal />}
         </section>
         <section className="employers" id="employersID">
           {<Employers />}
         </section>
-        <section className="contact" id="contactID">
+        <section className="contact" id="kontakt">
           {<Contact />}
         </section>
         <footer className="footer">{<Footer />}</footer>
