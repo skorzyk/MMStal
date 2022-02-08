@@ -70,7 +70,7 @@ class Header extends React.Component {
             naszych produktów wykonujemy z ostrożnością i dbałością.
           </p>
         </div>
-        <a href="#offerID" className="header__scroll">
+        <a href="#oferta" className="header__scroll">
           <img
             src={scrollBtn}
             alt="scroll button"
