@@ -25,3 +25,13 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #b15c12;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page {
+  flex-grow: 1;
+}

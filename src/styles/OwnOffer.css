@@ -1,15 +1,20 @@
+.ownOffer {
+  margin: 56px 0 0;
+}
+
 .ownOffer--container {
-  background-color: #0a130e;
-  background-image: url("../images/zdjecie-plany.png");
+  background-color: #fff;
+  background-image: url("../images/zdjecie-plany.jpg");
   background-repeat: no-repeat;
-  background-size: 60%;
+  background-size: 80%;
   background-position-x: right;
   background-position-y: 60%;
+  margin: 40px 0;
 }
 
 .ownOffer__title {
   max-width: 1400px;
-  color: #fff;
+  color: #000;
   padding: 32px 18px 24px;
   text-align: left;
   letter-spacing: 1px;
@@ -25,7 +30,7 @@
 
 .ownOffer__subtitle {
   max-width: 1400px;
-  color: #fff;
+  color: #000;
   font-family: "Anton", sans-serif;
   font-size: 24px;
   letter-spacing: 1px;
@@ -39,7 +44,7 @@
 
 .ownOffer__desc {
   font-family: "Open Sans", sans-serif;
-  color: #fff;
+  color: #000;
   font-weight: 300;
   margin-top: 10px;
 }
@@ -58,7 +63,7 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 32px;
-  background-color: #0a130e;
+  background-color: #fff;
 }
 
 .individualOffer__item {
@@ -76,7 +81,7 @@
 
 .individualOffer__desc {
   font-family: "Anton", sans-serif;
-  color: #fff;
+  color: #000;
   font-weight: 500;
   font-size: 24px;
   margin: 8px;
@@ -104,6 +109,8 @@
 @media (min-width: 1024px) {
   .ownOffer--container {
     padding: 0 40px;
+    background-size: 60%;
+    background-position-y: 70%;
   }
 
   .ownOffer__desc--container {

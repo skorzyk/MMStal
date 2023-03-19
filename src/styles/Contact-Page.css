@@ -1,0 +1,16 @@
+.contact--page {
+    margin-top: 54px;
+    background-color: #fff;
+} 
+
+.contact--page .contact__title, .contact--page .form__desc,
+.contact--page .input__label, .contact--page .contact__single,
+.contact--page .contact__adres, .contact--page .contact__number,
+.contact--page .contact__mail {
+    color: #000;
+}
+
+.contact--page .input__contact, .contact--page .textarea__contact {
+    background-color: #fff;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25)
+}

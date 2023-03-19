@@ -22,11 +22,7 @@
   z-index: 2;
 }
 
-.header__logo {
-  width: 100px;
-  margin: 12px;
-  z-index: 2;
-}
+
 
 .header__medias {
   display: flex;
@@ -146,9 +142,6 @@
 }
 
 @media (min-width: 1200px) {
-  .header__logo {
-    margin-left: 32px;
-  }
 
   .header__medias {
     margin-right: 32px;

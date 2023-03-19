@@ -1,0 +1,7 @@
+.gallery--realization {
+    margin-top: 54px;
+}
+
+.gallery--realization .swiper-container {
+    max-height: 100%;
+}
