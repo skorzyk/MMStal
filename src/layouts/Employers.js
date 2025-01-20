@@ -1,7 +1,3 @@
-import Adam1 from "../images/Adam_1920w.jpg";
-import Adam2 from "../images/Adam_1280w.jpg";
-import Adam3 from "../images/Adam_800w.jpg";
-import Adam4 from "../images/Adam_460w.jpg";
 import Marcin1 from "../images/Marcin_1920w.jpg";
 import Marcin2 from "../images/Marcin_1280w.jpg";
 import Marcin3 from "../images/Marcin_800w.jpg";
@@ -99,30 +95,6 @@ const Employers = () => {
             2mm do 40mm. Warto nadmienić, że większość wykonywanych prac była
             poddawana badaniom RTG co świadczy o dokładności wykonywanych łączeń
             spawalniczych.
-          </p>
-        </div>
-      </div>
-      <div className="employee--container" data-aos={"fade-right"}>
-        <img
-          srcSet={`${Adam4} 460w, ${Adam3} 800w, ${Adam2} 1280w, ${Adam1} 1920w`}
-          src={Adam1}
-          alt="Adam Boruta MMstal"
-          className="employee__img employee__img--second"
-        />
-        <div className="employee__desc--container">
-          <h4 className="employee__name">
-            Adam <span className="employee__surname">Boruta</span>
-          </h4>
-          <p className="employee__exp">6 lat doświadczenia</p>
-          <p className="employee__desc">
-            Monter konstrukcji stalowych oraz pomocnik spawacza. Swoją przygodę
-            z metaloplastyka rozpoczął w trybie pracy sezonowej, jako pomocnik
-            spawacza oraz pomocnik przy montażu konstrukcji. W miarę upływu
-            czasu i nabieranego doświadczenia praca dorywcza stała się jego
-            pomysłem na życie. W naszej firmie zajmuje się obróbką materiału
-            poczynając od przygotowania i pocięcia materiału pod wymiar do
-            finalnego oczyszczenia, szlifowania i wykończenia po montaż
-            wykonanych konstrukcji.
           </p>
         </div>
       </div>

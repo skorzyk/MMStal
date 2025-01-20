@@ -24,14 +24,6 @@ function Contact() {
               667-045-533
             </a>
           </div>
-          <div className="contact__single">
-            <h4 className="contact__name">
-              Adam <span className="contact__surname">Boruta</span>
-            </h4>
-            <a href="tel:575-255-700" className="contact__number">
-              575-255-700
-            </a>
-          </div>
           <div className="contact__adres">
             <h3 className="contact__name-company">MMSTAL</h3>
             <a href="mailto:biuro@mmstal.pl" className="contact__mail">
@@ -116,14 +108,6 @@ function Contact() {
           </h4>
           <a href="tel:667-045-533" className="contact__number">
             667-045-533
-          </a>
-        </div>
-        <div className="contact__single">
-          <h4 className="contact__name">
-            Adam <span className="contact__surname">Boruta</span>
-          </h4>
-          <a href="tel:575-255-700" className="contact__number">
-            575-255-700
           </a>
         </div>
         <div className="contact__adres">
