@@ -1,8 +1,7 @@
 local_backend: false
 backend:
   name: git-gateway
-  # change on main
-  branch: mmstal-2.0_version
+  branch: main
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
