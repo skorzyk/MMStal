@@ -1,135 +1,132 @@
-import { SRLWrapper } from "simple-react-lightbox";
-import SwiperCore, {
+import React, { useState, useRef } from 'react';
+import Lightbox from 'yet-another-react-lightbox';
+import Counter from 'yet-another-react-lightbox/plugins/counter';
+import Download from 'yet-another-react-lightbox/plugins/download';
+import { Fullscreen } from 'yet-another-react-lightbox/plugins';
+import 'yet-another-react-lightbox/styles.css';
+import 'yet-another-react-lightbox/plugins/counter.css';
+import {
   Navigation,
   Pagination,
   Scrollbar,
   A11y,
   Autoplay,
-} from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+  Grid,
+} from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/grid';
+import Aos from 'aos';
+import '../styles/Gallery.css';
 
-import "swiper/swiper.scss";
-import "swiper/components/navigation/navigation.scss";
-import "swiper/components/pagination/pagination.scss";
-import "swiper/components/scrollbar/scrollbar.scss";
-import "../styles/Gallery.css";
+const DEFAULT_BREAKPOINTS = {
+  320: {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 10,
+    pagination: { type: 'bullets', clickable: true },
+  },
+  768: {
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    spaceBetween: 20,
+    pagination: { type: 'fraction' },
+  },
+  1200: {
+    slidesPerView: 2,
+    slidesPerGroup: 3,
+    spaceBetween: 30,
+    pagination: { type: 'fraction' },
+  },
+};
 
-import balustrady1 from "../images/wlasne/balustrady2_wlasne.jpg";
-import balustrady2 from "../images/wlasne/balustrady4_wlasne-crop.jpg";
-import balustrady3 from "../images/wlasne/balustrady5_wlasne.jpg";
-import balustrady4 from "../images/wlasne/balustrady6_wlasne.jpg";
-import balustrady5 from "../images/wlasne/balustrady_wew_wlasne-crop.jpg";
-import barierka from "../images/wlasne/barierka1.jpg";
-import brama from "../images/wlasne/brama2_wlasne.jpg";
-import brama2 from "../images/wlasne/brama3_wlasne.jpg";
-import brama3 from "../images/wlasne/brama_wlasne.jpg";
-import brama4 from "../images/wlasne/bramy_przesuwne_wlasne.jpg";
-import ogrodzenia from "../images/wlasne/ogrodzenia2_wlasne.jpg";
-import ogrodzenia2 from "../images/wlasne/ogrodzenia_wlasne-crop.jpg";
-import Aos from "aos";
-
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
-
-const Gallery = () => {
-  const options = {
-    buttons: { backgroundColor: "#e67918" },
+const mergeBreakpoints = (defaultBps, customBps) => {
+  if (!customBps) return defaultBps;
+  return {
+    ...defaultBps,
+    ...Object.entries(customBps).reduce(
+      (acc, [key, value]) => ({
+        ...acc,
+        [key]: {
+          ...(defaultBps[key] || {}),
+          ...value,
+        },
+      }),
+      {}
+    ),
   };
-  window.addEventListener("load", Aos.refresh);
+};
+
+const GallerySlider = ({
+  title = 'Galeria',
+  images = [],
+  breakpoints,
+  swiperProps = {},
+  variant = 'main',
+}) => {
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+  const fullscreenRef = useRef(null);
+
+  const mergedBreakpoints = mergeBreakpoints(DEFAULT_BREAKPOINTS, breakpoints);
+
+  React.useEffect(() => {
+    window.addEventListener('load', Aos.refresh);
+    return () => window.removeEventListener('load', Aos.refresh);
+  }, []);
+
   return (
     <>
-      <SRLWrapper options={options}>
-        <h2 className="gallery__title" data-aos={"fade-up"}>
-          Przykładowe realizacje
-        </h2>
-        <Swiper
-          breakpoints={{
-            320: {
-              slidesPerView: 1,
-              slidesPerColumn: 1,
-              pagination: { type: "bullets", clickable: true },
-            },
-            990: {
-              slidesPerView: 2,
-              slidesPerColumn: 1,
-              pagination: { type: "fraction", clickable: true },
-            },
-            1200: {
-              slidesPerView: 2,
-              slidesPerColumn: 2,
-              pagination: { type: "fraction", clickable: true },
-            },
-          }}
-          spaceBetween={20}
-          slidesPerColumnFill="row"
-          autoplay={{ disableOnInteraction: true, delay: 5000 }}
-          navigation
-          pagination={{ type: "fraction", clickable: true }}
-          data-aos={"fade-up"}
-        >
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={balustrady1} alt="balustrady" className="slide__img" />
+      {variant !== 'none' && (
+        <h2 className={`gallery__title gallery__title--${variant}`}>{title}</h2>
+      )}
+      <Swiper
+        {...swiperProps}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, Grid]}
+        breakpoints={mergedBreakpoints}
+        spaceBetween={20}
+        slidespercolumnfill='row'
+        autoplay={{ disableOnInteraction: true, delay: 5000 }}
+        navigation
+        pagination={{ type: 'fraction', clickable: true }}
+      >
+        {images.map((img, i) => (
+          <SwiperSlide key={img.src || img.imageSrc}>
+            <div className='slide-wrapper'>
+              <img
+                src={img.src || img.imageSrc}
+                alt={img.alt || img.imageAlt}
+                className='slide__img'
+                onClick={() => {
+                  setIndex(i);
+                  setOpen(true);
+                }}
+                style={{ cursor: 'pointer' }}
+              />
             </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={barierka} alt="barierki" className="slide__img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={brama2} alt="bramy" className="slide__img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={ogrodzenia2} alt="ogrodzenia" className="slide__img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={balustrady2} alt="balustrady" className="slide__img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={brama} alt="bramy" className="slide__img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={ogrodzenia} alt="ogrodzenia" className="slide__img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={brama3} alt="bramy" className="slide__img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={balustrady3} alt="balustrady" className="slide__img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={brama4} alt="bramy" className="slide__img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={balustrady4} alt="balustrady" className="slide__img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={balustrady5} alt="balustrady" className="slide__img" />
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </SRLWrapper>
+        ))}
+      </Swiper>
+      <Lightbox
+        open={open}
+        index={index}
+        close={() => setOpen(false)}
+        slides={images.map((img) => ({
+          src: img.src || img.imageSrc,
+          alt: img.alt || img.imageAlt,
+        }))}
+        plugins={[Counter, Download, Fullscreen]}
+        counter={{ container: { style: { top: 'unset', bottom: 0 } } }}
+        fullscreen={{ ref: fullscreenRef }}
+        on={{
+          click: () => fullscreenRef.current?.enter(),
+        }}
+      />
     </>
   );
 };
 
-export default Gallery;
+export default GallerySlider;

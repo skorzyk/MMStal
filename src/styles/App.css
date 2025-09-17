@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300;400;700&display=swap');
 
 * {
   margin: 0;
@@ -15,7 +15,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 14px;
+  width: 8px;
 }
 ::-webkit-scrollbar-thumb {
   background: #e67918;

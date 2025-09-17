@@ -1,24 +1,41 @@
-import { SRLWrapper } from 'simple-react-lightbox';
-import { Swiper, SwiperSlide } from "swiper/react";
-import exampleImg from '../../images/wlasne/barierka1.jpg';
-import balustrady1 from "../../images/wlasne/balustrady2_wlasne.jpg";
-import balustrady2 from "../../images/wlasne/balustrady4_wlasne-crop.jpg";
-import barierka from "../../images/wlasne/barierka1.jpg";
-import brama from "../../images/wlasne/brama2_wlasne.jpg";
-import brama2 from "../../images/wlasne/brama3_wlasne.jpg";
-import ogrodzenia2 from "../../images/wlasne/ogrodzenia_wlasne-crop.jpg";
+import 'yet-another-react-lightbox/styles.css';
+
+import offerRailingsOutside from '../../data/offerRailingsOutside/offerRailingsOutside.json';
+
+import railingOutsideExample1 from '../../images/wizualizacje/barierka-wzor1.png';
+import railingOutsideExample2 from '../../images/wizualizacje/barierka-wzor2.png';
+import railingOutsideExample3 from '../../images/wizualizacje/barierka-wzor3.png';
+import GallerySlider from '../Gallery';
+
+const breakpoints = {
+  320: {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: { type: 'bullets', clickable: true },
+    grid: { rows: 1 },
+  },
+  768: {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    pagination: { type: 'fraction' },
+    grid: { rows: 2, fill: 'row' },
+  },
+  1200: {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    pagination: { type: 'fraction' },
+    grid: { rows: 2, fill: 'row' },
+  },
+};
 
 const OfferRailingsOutside = () => {
-    const options = {
-        buttons: { backgroundColor: "#e67918" },
-      };
   return (
     <>
       <h1>BALUSTRADY ZEWNĘTRZNE</h1>
       <p className='offer-railings__description'>
         Nasza firma wyspecjalizowana w produkcji oraz montażu barierek,
         balustrad oraz poręczy ściennych oferuje dla swoich klientów najwyższej
-        jakość usługi.
+        jakości usługi.
       </p>
       <p className='offer-railings__description'>
         W naszej ofercie znajdziecie państwo zarówno balustrady balkonowe oraz
@@ -31,7 +48,7 @@ const OfferRailingsOutside = () => {
           <div className='offer-railings__pattern-single'>
             <img
               className='offer-railings__pattern-img'
-              src={exampleImg}
+              src={railingOutsideExample1}
               alt='przyklad'
             />
             <div className='offer-railings__pattern-description'>
@@ -40,11 +57,16 @@ const OfferRailingsOutside = () => {
                   Balustrada zewnętrzna
                 </p>
                 <p className='offer-railings__pattern-description-info'>
-                  Balustrada zewnętrzna z wypełnieniem pionowym: rama profil
-                  zamknięty 40x40x2 z wypełnieniem pionowym 15x15x1,5 w odstępie
-                  80mm. Zastosowane profile zamknięte są przykładowe jak i
-                  odstępy pomiędzy wypełnieniem pionowym. Wymiary balustrad
-                  dostosujemy do Państwa indywidualnych potrzeb.
+                  Nowoczesna balustrada z pionowym wypełnieniem — jak na
+                  wizualizacji: balkony francuskie przy oknach oraz balustrada
+                  tarasowa nad garażem. Konstrukcja ze stali: rama/słupki
+                  40x40x2 mm, poręcz 40x20x2 mm, wypełnienie pionowe z profili
+                  18x18x1,5 mm w rozstawie ok. 90 mm. Montaż do boku lub do
+                  górnej powierzchni attyki; balkony francuskie kotwione do
+                  elewacji na konsolach. Wykończenie: ocynk ogniowy + malowanie
+                  proszkowe (na wizualizacji czarny mat). Zastosowane przekroje
+                  i rozstawy są przykładowe — dopasujemy wysokość (najczęściej
+                  ok. 110 cm), szerokości modułów i detale do Państwa projektu.
                 </p>
               </div>
             </div>
@@ -55,7 +77,7 @@ const OfferRailingsOutside = () => {
           <div className='offer-railings__pattern-single'>
             <img
               className='offer-railings__pattern-img'
-              src={exampleImg}
+              src={railingOutsideExample2}
               alt='przyklad'
             />
             <div className='offer-railings__pattern-description'>
@@ -64,11 +86,17 @@ const OfferRailingsOutside = () => {
                   Balustrada zewnętrzna
                 </p>
                 <p className='offer-railings__pattern-description-info'>
-                  Balustrada zewnętrzna z wypełnieniem poziomym: rama profil
-                  zamknięty 40x40x2x z wypełnieniem poziomym 60x20x1,5 w
-                  odstępie 20mm. Zastosowane profile zamknięte są przykładowe
-                  jak i odstępy pomiędzy wypełnieniem pionowym. Wymiary
-                  balustrad dostosujemy do Państwa indywidualnych potrzeb.
+                  Balustrada z poziomym wypełnieniem — spójna dla balkonów
+                  francuskich i tarasu nad garażem. Konstrukcja stalowa:
+                  słupki/ramy 40x40x2 mm, poręcz 40x20x2 mm. Wypełnienie z
+                  profili prostokątnych 30x20x1,5 mm układanych poziomo, rozstaw
+                  szczelin ok. 30–40 mm, co daje nowoczesną, “lamelową” linię i
+                  dobrą ochronę prywatności. Montaż: do boku elewacji (balkony
+                  francuskie) oraz do górnej krawędzi/wnętrza attyki (taras).
+                  Wykończenie: ocynk ogniowy + malowanie proszkowe RAL (na
+                  wizualizacji czarny mat). Podane przekroje i rozstawy są
+                  przykładowe — dopasujemy wysokość (zwykle ok. 110 cm), gęstość
+                  wypełnienia oraz sposób kotwienia do Państwa projektu.
                 </p>
               </div>
             </div>
@@ -79,7 +107,7 @@ const OfferRailingsOutside = () => {
           <div className='offer-railings__pattern-single'>
             <img
               className='offer-railings__pattern-img'
-              src={exampleImg}
+              src={railingOutsideExample3}
               alt='przyklad'
             />
             <div className='offer-railings__pattern-description'>
@@ -88,11 +116,18 @@ const OfferRailingsOutside = () => {
                   Balustrada zewnętrzna
                 </p>
                 <p className='offer-railings__pattern-description-info'>
-                  Balustrada zewnętrzna z wypełnieniem pionowym: rama profil
-                  zamknięty 40x40x2 z wypełnieniem pionowym 15x15x1,5 w odstępie
-                  80mm. Zastosowane profile zamknięte są przykładowe jak i
-                  odstępy pomiędzy wypełnieniem pionowym. Wymiary balustrad
-                  dostosujemy do Państwa indywidualnych potrzeb.
+                  Balustrada o gęstym, pionowym wypełnieniu z płaskowników —
+                  jednolita stylistycznie dla balkonów francuskich i tarasu nad
+                  garażem. Konstrukcja: słupki/ramy 50x50x2 mm, poręcz 60x30x2
+                  mm. Wypełnienie z płaskowników stalowych 30x5 mm ustawionych
+                  pionowo, prześwit między lamelami ok. 25–30 mm, co daje wyższą
+                  osłonę i elegancki, minimalistyczny wygląd. Montaż: balkony
+                  francuskie kotwione do lica elewacji; taras mocowany do górnej
+                  krawędzi attyki (stopy słupków maskowane). Wykończenie: ocynk
+                  ogniowy + malowanie proszkowe RAL (na wizualizacji czarny
+                  mat). Podane przekroje i rozstawy są przykładowe — wysokość
+                  (zwykle ok. 110 cm), gęstość wypełnienia i sposób mocowania
+                  dopasujemy do Państwa projektu.
                 </p>
               </div>
             </div>
@@ -100,67 +135,12 @@ const OfferRailingsOutside = () => {
         </div>
       </section>
       <section>
-      <SRLWrapper options={options}>
-        <h2 className="gallery__title" data-aos={"fade-up"}>
-          Przykładowe realizacje
-        </h2>
-        <Swiper
-          breakpoints={{
-            320: {
-              slidesPerView: 1,
-              slidesPerColumn: 1,
-              pagination: { type: "bullets", clickable: true },
-            },
-            990: {
-              slidesPerView: 2,
-              slidesPerColumn: 1,
-              pagination: { type: "fraction", clickable: true },
-            },
-            1200: {
-              slidesPerView: 2,
-              slidesPerColumn: 2,
-              pagination: { type: "fraction", clickable: true },
-            },
-          }}
-          spaceBetween={20}
-          slidesPerColumnFill="row"
-          autoplay={{ disableOnInteraction: true, delay: 5000 }}
-          navigation
-          pagination={{ type: "fraction", clickable: true }}
-          data-aos={"fade-up"}
-        >
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={balustrady1} alt="balustrady" className="slide__img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={barierka} alt="barierki" className="slide__img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={brama2} alt="bramy" className="slide__img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={ogrodzenia2} alt="ogrodzenia" className="slide__img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={balustrady2} alt="balustrady" className="slide__img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slide-wrapper">
-              <img src={brama} alt="bramy" className="slide__img" />
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </SRLWrapper>
+        <GallerySlider
+          images={offerRailingsOutside.images}
+          breakpoints={breakpoints}
+          title='Przykładowe realizacje'
+          variant='submain'
+        />
       </section>
     </>
   );

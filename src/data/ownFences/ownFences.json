@@ -1,0 +1,29 @@
+{
+  "title": "Nasze realizacje ogrodzenia",
+  "images": [
+    {
+      "src": "/uploads/brama_wlasne.jpg",
+      "alt": "brama"
+    },
+    {
+      "src": "/uploads/brama2_wlasne.jpg",
+      "alt": "brama"
+    },
+    {
+      "src": "/uploads/brama3_wlasne.jpg",
+      "alt": "brama"
+    },
+    {
+      "src": "/uploads/bramy_przesuwne_wlasne.jpg",
+      "alt": "brama"
+    },
+    {
+      "src": "/uploads/ogrodzenia_wlasne-crop.jpg",
+      "alt": "ogrodzenie"
+    },
+    {
+      "src": "/uploads/ogrodzenia2_wlasne.jpg",
+      "alt": "ogrodzenie"
+    }
+  ]
+}

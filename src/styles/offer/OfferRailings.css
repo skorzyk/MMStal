@@ -1,140 +1,153 @@
 .offer-railings {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 80px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 80px 16px;
+  padding-inline: 16px;
 }
 
 .offer-railings__tab-wrapper {
-    display: flex;
-    margin: 46px 0 6px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
 }
 
 .offer-railings__tab {
-    padding: 4px 16px;
-    border-bottom: 2px solid #c4c4c4;
-    font-weight: 500;
-    font-size: 18px;
-    font-family: Anton;
-    transition: 0.2s ease-in;
-    cursor: pointer;
+  padding: 4px 16px;
+  border-bottom: 2px solid #c4c4c4;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: Anton;
+  transition: 0.2s ease-in;
+  cursor: pointer;
 }
 
 .offer-railings__tab.active-tab {
-    border-bottom: 2px solid #e67918;
+  border-bottom: 2px solid #e67918;
 }
 
 .offer-railings__breadcrums-title {
-    font-family: Anton;
-    font-weight: 400;
-    color: #e67918;
-    text-transform: uppercase;
+  font-family: Anton;
+  font-weight: 400;
+  color: #e67918;
+  text-transform: uppercase;
 }
 
 .offer-railings__breadcrums-subtitle {
-    font-family: Anton;
-    font-weight: 500;
-    text-transform: uppercase;
+  font-family: Anton;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 h1 {
-    font-family: Anton;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 36px;
-    margin: 24px 0 8px;
+  font-family: Anton;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 36px;
+  margin: 24px 0 8px;
 }
 
 .offer-railings__description {
-    font-family: Open Sans;
-    font-weight: 300;
+  font-family: Open Sans;
+  font-weight: 300;
+}
+
+.offer-railings__list {
+  font-family: Open Sans;
+  font-weight: 300;
+  padding: 0 24px;
+}
+
+.offer-railings__list-item {
+  margin-top: 8px;
 }
 
 .offer-railings__description:last-of-type {
-    margin: 16px 0 36px;
+  margin: 16px 0 36px;
 }
 
 .offer-railings__examples {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 h3 {
-    font-size: 24px;
-    font-family: Anton;
-    font-weight: 500;
-    margin-bottom: 16px;
+  font-size: 24px;
+  font-family: Anton;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
 .offer-railings__pattern {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .offer-railings__pattern-single {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .offer-railings__pattern-name {
-    font-family: Anton;
-    font-weight: 500;
-    margin-bottom: 16px;
+  font-family: Anton;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
 .offer-railings__pattern-description-wrapper {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .offer-railings__pattern-description {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 
 .offer-railings__pattern-description-title {
-    font-family: Anton;
-    font-size: 16px;
+  font-family: Anton;
+  font-size: 16px;
 }
 
 .offer-railings__pattern-description-info {
-    font-family: Open Sans;
-    font-weight: 300;
-    font-size: 14px;
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .offer-railings__pattern-img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 4px;
+  width: 100%;
+  height: fit-content;
+  max-width: 500px;
+  border-radius: 4px;
 }
 
 @media (min-width: 992px) {
-    .offer-railings__pattern-single {
-        flex-direction: row;
-    }
+  .offer-railings__pattern-single {
+    flex-direction: row;
+  }
 
-    .offer-railings__pattern-description {
-        margin: 0 0 0 24px;
-    }
+  .offer-railings__pattern-description {
+    margin: 0 0 0 24px;
+  }
 }
 
 @media (min-width: 1400px) {
-    .offer-railings {
-        margin: 108px 160px;
-    }
+  .offer-railings {
+    margin: 108px 160px;
+  }
 
-    h1 {
-        font-size: 48px;
-        margin: 40px 0 16px;
-    }
+  h1 {
+    font-size: 48px;
+    margin: 40px 0 16px;
+  }
 
-    .offer-railings__description:last-of-type {
-        margin: 16px 0 80px;
-    }
+  .offer-railings__description:last-of-type {
+    margin: 16px 0 80px;
+  }
 
-    .offer-railings__pattern-name {
-        margin-bottom: 24px;
-    }
+  .offer-railings__pattern-name {
+    margin-bottom: 24px;
+  }
 
-    .offer-railings__pattern-description-wrapper {
-        margin-bottom: 32px;
-    }
+  .offer-railings__pattern-description-wrapper {
+    margin-bottom: 32px;
+  }
 }

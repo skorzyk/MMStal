@@ -1,14 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./styles/index.css";
-import App from "./layouts/App";
-import SimpleReactLightbox from "simple-react-lightbox";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './styles/index.css';
+import App from './layouts/App';
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <SimpleReactLightbox>
-      <App />
-    </SimpleReactLightbox>
-  </React.StrictMode>,
-  document.getElementById("root")
+    <App />
+  </React.StrictMode>
 );

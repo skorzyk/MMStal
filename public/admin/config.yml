@@ -1,0 +1,200 @@
+local_backend: true
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "mainPage"
+    label: "Galeria strona główna"
+    folder: "src/data/mainPage"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - label: "Zdjęcia"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Obraz", name: "src", widget: "image" }
+          - { label: "Opis", name: "alt", widget: "string" }
+
+  - name: "offerFences"
+    label: "Galeria oferta ogrodzenia pod wymiar"
+    folder: "src/data/offerFences"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - label: "Zdjęcia"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Obraz", name: "src", widget: "image" }
+          - { label: "Opis", name: "alt", widget: "string" }
+
+  - name: "offerRailingsInside"
+    label: "Galeria oferta balustrady zewnętrzne"
+    folder: "src/data/offerRailingsInside"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - label: "Zdjęcia"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Obraz", name: "src", widget: "image" }
+          - { label: "Opis", name: "alt", widget: "string" }
+
+  - name: "offerRailingsOutside"
+    label: "Galeria oferta balustrady wewnętrzne"
+    folder: "src/data/offerRailingsOutside"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - label: "Zdjęcia"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Obraz", name: "src", widget: "image" }
+          - { label: "Opis", name: "alt", widget: "string" }
+
+  - name: "offerStairs"
+    label: "Galeria oferta schody"
+    folder: "src/data/offerStairs"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - label: "Zdjęcia"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Obraz", name: "src", widget: "image" }
+          - { label: "Opis", name: "alt", widget: "string" }
+
+  - name: "offerConstructions"
+    label: "Galeria oferta konstrukcje stalowe"
+    folder: "src/data/offerConstructions"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - label: "Zdjęcia"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Obraz", name: "src", widget: "image" }
+          - { label: "Opis", name: "alt", widget: "string" }
+
+  - name: "offerFurniture"
+    label: "Galeria oferta meble loftowe"
+    folder: "src/data/offerFurniture"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - label: "Zdjęcia"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Obraz", name: "src", widget: "image" }
+          - { label: "Opis", name: "alt", widget: "string" }
+
+  - name: "ownFences"
+    label: "Galeria nasze realizacje ogrodzenia na wymiar"
+    folder: "src/data/ownFences"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - label: "Zdjęcia"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Obraz", name: "src", widget: "image" }
+          - { label: "Opis", name: "alt", widget: "string" }
+
+  - name: "ownRailings"
+    label: "Galeria nasze realizacje balustrady"
+    folder: "src/data/ownRailings"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - label: "Zdjęcia"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Obraz", name: "src", widget: "image" }
+          - { label: "Opis", name: "alt", widget: "string" }
+
+  - name: "ownStairs"
+    label: "Galeria nasze realizacje schody"
+    folder: "src/data/ownStairs"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - label: "Zdjęcia"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Obraz", name: "src", widget: "image" }
+          - { label: "Opis", name: "alt", widget: "string" }
+
+  - name: "ownConstructions"
+    label: "Galeria nasze realizacje konstrukcje stalowe"
+    folder: "src/data/ownConstructions"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - label: "Zdjęcia"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Obraz", name: "src", widget: "image" }
+          - { label: "Opis", name: "alt", widget: "string" }
+
+  - name: "ownFurniture"
+    label: "Galeria nasze realizacje meble loftowe"
+    folder: "src/data/ownFurniture"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - label: "Zdjęcia"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Obraz", name: "src", widget: "image" }
+          - { label: "Opis", name: "alt", widget: "string" }

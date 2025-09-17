@@ -3,10 +3,11 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 16px;
+  max-width: 1200px;
 }
 
 .employers__title {
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
   font-weight: 500;
   font-size: 30px;
   max-width: 1400px;
@@ -39,7 +40,7 @@
 }
 
 .employee__name {
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 24px;
@@ -51,20 +52,20 @@
 }
 
 .employee__exp {
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
   font-size: 18px;
   padding: 8px;
 }
 
 .employee__permission {
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
   font-size: 16px;
   padding: 8px;
   text-align: center;
 }
 
 .employee__desc {
-  font-family: "Open sans", sans-serif;
+  font-family: 'Open sans', sans-serif;
   font-weight: 300;
   padding: 8px 0;
   max-width: 600px;
@@ -76,7 +77,7 @@
 }
 
 .about__company {
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 30px;
@@ -88,13 +89,13 @@
 .history--container {
   max-width: 1400px;
   margin: 0 auto;
-  background-image: url("../images/Vector.png");
+  background-image: url('../images/Vector.png');
   background-size: contain;
   padding-bottom: 20px;
 }
 
 .history__title {
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
   font-weight: 500;
   font-size: 24px;
   padding: 4px 20px 16px;
@@ -103,12 +104,12 @@
 .history__desc--main {
   width: 100%;
   height: 100%;
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
   padding: 12px 20px;
 }
 
 .history__date {
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
   font-size: 20px;
   padding: 12px 20px;
 }
@@ -121,7 +122,7 @@
 .history__desc--other {
   width: 100%;
   height: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   padding: 12px 20px 12px;
 }

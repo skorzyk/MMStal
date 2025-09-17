@@ -1,13 +1,14 @@
-import React from "react";
-import { HashRouter } from "react-router-dom";
+import React from 'react';
+import { HashRouter } from 'react-router-dom';
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Footer from "./Footer";
-import Navigation from "./Navigation";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Footer from './Footer';
+import Navigation from './Navigation';
 
-import "../styles/App.css";
-import Page from "./Page";
+import '../styles/App.css';
+import 'yet-another-react-lightbox/styles.css';
+import Page from './Page';
 
 class App extends React.Component {
   componentDidMount() {
@@ -15,29 +16,14 @@ class App extends React.Component {
   }
   render() {
     return (
-      <HashRouter basename="/">
-        <div className="app">
-          <nav className="menu">{<Navigation />}</nav>
-          <main className="page" id="pageID">
-            {/* {<OfferItems />} */}
+      <HashRouter basename='/'>
+        <div className='app'>
+          <nav className='menu'>{<Navigation />}</nav>
+          <main className='page' id='pageID'>
             {<Page />}
           </main>
-          {/* <section className="ownOffer" id="wlasny-projekt">
-            {<OwnOffer />}
-          </section>
-          <section className="gallery" id="galeria">
-            {<Gallery />}
-          </section>
-          <section className="history" id="historia">
-            {<HistoryMMStal />}
-          </section>
-          <section className="employers" id="employersID">
-            {<Employers />}
-          </section>
-          <section className="contact" id="kontakt">
-            {<Contact />}
-          </section> */}
-          <footer className="footer">{<Footer />}</footer>
+
+          <footer className='footer'>{<Footer />}</footer>
         </div>
       </HashRouter>
     );
