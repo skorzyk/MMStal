@@ -1,12 +1,7 @@
 import React from "react";
 import "font-awesome/css/font-awesome.min.css";
 
-import Navigation from "../layouts/Navigation";
-
 import "../styles/Header.css";
-
-import scrollBtn from "../images/svg/scroll 1.svg";
-import logo from "../images/svg/MMstal-logo-SVG.svg";
 
 class Header extends React.Component {
   state = { menuOpen: false };
